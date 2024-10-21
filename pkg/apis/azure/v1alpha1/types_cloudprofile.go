@@ -30,8 +30,8 @@ type CloudProfileConfig struct {
 	CloudConfiguration *CloudConfiguration `json:"cloudConfiguration,omitempty"`
 }
 
-// CloudConfiguration contains detailed config for the cloud to connect to. Currently we only support selection of well-
-// known Azure-instances by name, but this could be extended in future to support private clouds.
+// CloudConfiguration contains detailed config for the cloud to connect to. Currently, we only support selection of
+// well-known Azure-instances by name, but this could be extended in future to support private clouds.
 type CloudConfiguration struct {
 	// Name is the name of the cloud to connect to, e.g. "AzurePublic" or "AzureChina".
 	Name string `json:"name,omitempty"`
